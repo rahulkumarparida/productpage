@@ -1,0 +1,113 @@
+:root {
+    --color1:black ;
+    --color2:rgb(9, 169, 233);
+}
+body {
+  width: 100%;
+  height: 100%;
+display: flex;
+flex-wrap: wrap;
+  background: linear-gradient(90deg,var(--color1), var(--color2)) , no-repeat;
+  
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+ 
+  display: flex;
+  width: 99%;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2.8rem;
+  padding-right: 80rem;
+}
+.navbar h1 {
+  padding-left:3rem;
+  display: flex;
+  justify-content: space-around;
+}
+.navright {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navright a {
+  padding: 2.5rem;
+  text-decoration: none;
+  color: white;
+}
+.home{
+height: 110%;
+width: 117rem;
+
+border-top:25rem ;
+margin-top: 8rem;
+display: flex;
+
+}
+.info{
+    border: 1px solid red;
+}
+/* .description {
+    margin: 15rem 0rem;
+    padding-left: 5rem;
+    color: white;
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+  
+    position:relative;
+ font-size: large;
+
+}
+
+.car{
+    position: absolute;
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 2.8rem;
+    color: white;
+    z-index: 5;
+   
+} */
+
+
+.home img{
+    margin: 0rem 0rem;
+   height: 60%;
+   width: 50%;
+   border-radius: 1rem;
+   box-shadow: 0 0 10px rgb(0, 0, 0);
+  
+}
+.home img:hover{
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+
+}
+/* @media  only screen and (max-width:650px) {
+    body{
+        display: flex;
+        align-items: center;
+      
+    }
+    img{
+        height:auto;
+        width: auto;
+    }
+    p{
+      height: auto;
+      width: auto;
+      position: none;
+
+    }
+    .car{
+        height: auto;
+        width: auto;
+       padding: 0;
+    }
+} */
