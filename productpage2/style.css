@@ -3,19 +3,22 @@
   --color2: rgb(9, 188, 201);
 }
 body {
-  width: 100rem;
-  height: 100rem;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(90deg, var(--color1), var(--color2)), no-repeat;
+
+  background: linear-gradient(90deg, var(--color1), var(--color2));
+  
+ 
 }
 .navbar {
   position: fixed;
   top: 0;
   background-color: transparent;
-
   display: flex;
   width: 99%;
+  /* border: 1px solid black; */
 }
 .logo a {
   text-decoration: none;
@@ -41,49 +44,62 @@ body {
   text-decoration: none;
   color: white;
 }
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 7.5rem; 
+}
+.two , .three{
+  margin-top:0rem ;
+}
 .carinfo1 {
   background: no-repeat;
   height: 80rem;
   width: 95rem;
   border-top: 25rem;
-  margin-top: 8rem;
+  
   display: flex;
 }
 .backimg {
   background: no-repeat;
+  margin-top: 6rem;
   height: 60rem;
   width: 95rem;
   background-image: url(https://backiee.com/static/wallpapers/1000x563/198664.jpg);
   background-size: 95rem 60rem;
   transition: all ease 0.5s;
+  
 }
 .backimg:hover {
-  box-shadow: 0 0 2rem rgb(0, 240, 248);
+  box-shadow: 0 0 2rem rgb(214, 219, 219);
+  
 }
 .car-info {
   width: 98rem;
-  height: 40%;
-  text-align: left;
+  height: 100%;
+ 
   color: rgb(255, 255, 255);
   transition: all ease 0.5s;
   display: none;
-  transition: all ease 1s;
-}
-.backimg:hover .car-info{
-  display: block;
-
-}
-.description {
  
-  width: 20%;
-  margin-left: 70rem;
-  margin-top: -2rem;
-  font-size: 8rem;
-  transition: all ease 0.7s;
+}
+.backimg:hover .car-info {
+  display: block;
+  background: linear-gradient(90deg, black, transparent);
+  
 }
 
+.description {
+  width: 20%;
+  margin-left: 64.5rem;
+ 
+  font-size: 8rem;
+}
 .car {
- margin-left: 45rem;
+  margin-left: 35rem;
   text-decoration: underline;
   font-family: "Cedarville Cursive", cursive;
   font-size: 2.8rem;
@@ -93,4 +109,177 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.about{
+  margin-left: -12.6%;
+  width: 100%;
+margin-top: 1.5%;
+color: white;
+}
+.carinfo2{
+ 
+  background: no-repeat;
+  height: 80rem;
+  width: 95rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.backimg2{
+  background: no-repeat;
+  margin-top: 6rem;
+  height: 60rem;
+  width: 95rem;
+  background-image: url(https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-01@2x.jpg);
+  background-size: 95rem 60rem;
+  transition: all ease 0.5s;
+}
+.backimg2:hover {
+  box-shadow: 0 0 2rem rgb(0, 240, 248);
+ 
+}
+.car-info2{
+  width: 98rem;
+  height: 100%;
+ 
+  color: rgb(255, 255, 255);
+  transition: all ease-in-out 0.3s;
+  display: none;
+}
+.backimg2:hover .car-info2  {
+  display: block;
+  background: linear-gradient(90deg, black, transparent); 
+}
+.car2{
+  margin-left: 64rem;
+  text-decoration: underline;
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 2.8rem;
+}
+.description2{
+  width: 20%;
+  margin-left: 64.5rem;
+ 
+  font-size: 4.5rem;
+}
+.carlink2{
+  text-decoration: none;
+
+}
+.backimg3{
+  background: no-repeat;
+
+  height: 60rem;
+  width: 95rem;
+  background-image: url(https://www.motortrend.com/uploads/2023/08/10823-2024-Audi-RS5-Coupe-Competition-Package-front-view.jpg);
+  background-size: 95rem 60rem;
+  transition: all ease 0.3s;
+}
+.carinfo3{
+ 
+  background: no-repeat;
+  height: 80rem;
+  width: 95rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.backimg3{
+  background: no-repeat;
+  margin-top: 6rem;
+  height: 60rem;
+  width: 95rem;
+  background-image: url(https://www.motortrend.com/uploads/2023/08/10823-2024-Audi-RS5-Coupe-Competition-Package-front-view.jpg);
+  background-size: 95rem 60rem;
+  transition: all ease 0.3s;
+}
+.home:hover {
+  box-shadow: 0 0 2rem rgb(0, 240, 248);
+  
+}
+.car-info3{
+  width: 98rem;
+  height: 100%;
+  color: rgb(255, 255, 255);
+  transition: all ease-in-out 0.3s;
+  display: none;
+}
+.backimg3:hover .car-info3  {
+  display: block;
+  background: linear-gradient(90deg, black, transparent); 
+}
+.car3{
+  margin-left: 64rem;
+  text-decoration: underline;
+  font-family: "Cedarville Cursive", cursive;
+  font-size: 2.8rem;
+}
+.description3{
+  width: 20%;
+  margin-left: 64.5rem;
+  margin-top: 0rem;
+  font-size: 4.5rem;
+}
+.backimg , .backimg2 ,.backimg3 {
+  margin-left: -12.4%;
+
+
+}
+legend{
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 2rem;
+}
+fieldset{
+  border-color: aqua;
+ background: linear-gradient(90deg, rgb(0, 92, 92), var(--color1));
+ font-size: larger;
+ transition: all ease 0.3s;
+}
+fieldset:hover{
+  scale: 1.2;
+  margin-left: 12rem;
+}
+.models{
+  display: flex;
+
+}
+.model-one , .model-two ,.model-three{
+  height: 40rem;
+  width: 25rem; 
+margin:0 6.8rem;
+margin-top: 4rem;
+}
+.model-one{
+  background: no-repeat;
+background-image:url(https://i.pinimg.com/564x/d4/bb/69/d4bb697a2941b08ff749fef2f58c51b9.jpg) ;
+background-size:100% 90% ;
+}
+.model-two{
+  background: no-repeat;
+background-image:url(https://i.pinimg.com/564x/ad/93/be/ad93bef33e4630742f13a92005409140.jpg);
+background-size:100% 90% ;
+}
+.model-three{
+  background: no-repeat;
+background-image:url(https://i.pinimg.com/564x/08/ae/2f/08ae2fa3f4aa5f7aedd374107a49757d.jpg);
+background-size:100% 90% 
+}
+.models h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  
+  color: white;
+ 
+}
+.models a{
+  text-decoration: none;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
