@@ -2,6 +2,10 @@
   --color1: black;
   --color2: rgb(9, 188, 201);
 }
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   width: 100%;
   height: 100%;
@@ -12,22 +16,32 @@ body {
   
  
 }
+
 .navbar {
   position: fixed;
   top: 0;
-  background-color: transparent;
+  z-index: 10;
+  background-color:grey;
   display: flex;
-  width: 99%;
-  /* border: 1px solid black; */
+  width: 100%;
+}
+.navbar:hover{
+
+  background:linear-gradient(90deg, gray ,black);
+
+}
+.navbar:hover .audi-logo{
+  color: black;
 }
 .logo a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Cedarville Cursive", cursive;
   font-weight: 800;
   font-style: normal;
   font-size: 2.8rem;
   padding-right: 80rem;
+
 }
 .navbar h1 {
   padding-left: 3rem;
@@ -58,44 +72,41 @@ body {
 .carinfo1 {
   background: no-repeat;
   height: 80rem;
-  width: 95rem;
-  border-top: 25rem;
-  
+  width: 100%;
   display: flex;
+
 }
 .backimg {
   background: no-repeat;
-  margin-top: 6rem;
-  height: 60rem;
-  width: 95rem;
+  margin-top: 2.2rem;
+  height: 67rem;
+  width:120rem;
   background-image: url(https://backiee.com/static/wallpapers/1000x563/198664.jpg);
-  background-size: 95rem 60rem;
+  background-size: 120rem 67rem;
   transition: all ease 0.5s;
   
 }
 .backimg:hover {
-  box-shadow: 0 0 2rem rgb(214, 219, 219);
+  box-shadow: 0 0 2rem rgb(1, 254, 254);
   
 }
 .car-info {
-  width: 98rem;
+  width: 100%;
   height: 100%;
- 
   color: rgb(255, 255, 255);
   transition: all ease 0.5s;
   display: none;
+  
  
 }
 .backimg:hover .car-info {
   display: block;
-  background: linear-gradient(90deg, black, transparent);
-  
+  background: linear-gradient(90deg, transparent,black);
 }
 
 .description {
   width: 20%;
   margin-left: 64.5rem;
- 
   font-size: 8rem;
 }
 .car {
@@ -110,14 +121,21 @@ body {
   justify-content: center;
   align-items: center;
 }
-.about{
-  margin-left: -12.6%;
-  width: 100%;
-margin-top: 1.5%;
-color: white;
+legend{
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal; 
+  font-size: 2rem;
+}
+fieldset{
+border-color: aqua;
+background: linear-gradient(90deg, rgb(0, 92, 92), var(--color1));
+font-size: 1rem;
+transition: all ease 0.3s;
 }
 .carinfo2{
- 
+  margin-top: -5%;
+  padding-left: 16.5rem;
   background: no-repeat;
   height: 80rem;
   width: 95rem;
@@ -126,28 +144,30 @@ color: white;
 }
 .backimg2{
   background: no-repeat;
-  margin-top: 6rem;
-  height: 60rem;
-  width: 95rem;
+  margin-top: 2.8rem;
+  height: 67rem;
+  width: 115rem;
   background-image: url(https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-01@2x.jpg);
-  background-size: 95rem 60rem;
+  background-size: 115rem 67rem;
   transition: all ease 0.5s;
+    
 }
 .backimg2:hover {
   box-shadow: 0 0 2rem rgb(0, 240, 248);
  
 }
 .car-info2{
-  width: 98rem;
+  
+  width: 115rem;
   height: 100%;
- 
   color: rgb(255, 255, 255);
   transition: all ease-in-out 0.3s;
   display: none;
+
 }
 .backimg2:hover .car-info2  {
   display: block;
-  background: linear-gradient(90deg, black, transparent); 
+  background: linear-gradient(90deg , transparent , black); 
 }
 .car2{
   margin-left: 64rem;
@@ -158,24 +178,15 @@ color: white;
 .description2{
   width: 20%;
   margin-left: 64.5rem;
- 
   font-size: 4.5rem;
 }
 .carlink2{
   text-decoration: none;
-
 }
-.backimg3{
-  background: no-repeat;
 
-  height: 60rem;
-  width: 95rem;
-  background-image: url(https://www.motortrend.com/uploads/2023/08/10823-2024-Audi-RS5-Coupe-Competition-Package-front-view.jpg);
-  background-size: 95rem 60rem;
-  transition: all ease 0.3s;
-}
 .carinfo3{
- 
+  margin-top: -5%;
+  padding-left: 16.5rem;
   background: no-repeat;
   height: 80rem;
   width: 95rem;
@@ -184,19 +195,15 @@ color: white;
 }
 .backimg3{
   background: no-repeat;
-  margin-top: 6rem;
-  height: 60rem;
-  width: 95rem;
+  margin-top: 2.8rem;
+  height: 67rem;
+  width: 115rem;
   background-image: url(https://www.motortrend.com/uploads/2023/08/10823-2024-Audi-RS5-Coupe-Competition-Package-front-view.jpg);
-  background-size: 95rem 60rem;
+  background-size: 115rem 67rem;
   transition: all ease 0.3s;
 }
-.home:hover {
-  box-shadow: 0 0 2rem rgb(0, 240, 248);
-  
-}
 .car-info3{
-  width: 98rem;
+  width: 115rem;
   height: 100%;
   color: rgb(255, 255, 255);
   transition: all ease-in-out 0.3s;
@@ -204,7 +211,8 @@ color: white;
 }
 .backimg3:hover .car-info3  {
   display: block;
-  background: linear-gradient(90deg, black, transparent); 
+  box-shadow: 0 0 2rem aqua;
+  background: linear-gradient(90deg, transparent , black); 
 }
 .car3{
   margin-left: 64rem;
@@ -215,39 +223,58 @@ color: white;
 .description3{
   width: 20%;
   margin-left: 64.5rem;
-  margin-top: 0rem;
+  
   font-size: 4.5rem;
 }
-.backimg , .backimg2 ,.backimg3 {
-  margin-left: -12.4%;
 
+.performance{
+  margin-top: -5%;
+  height: 40rem;
+  width: 110rem;
+display: flex;
+justify-content: center;
+align-items: center;
+ }
+ .spec-box{
 
+display: flex;
+justify-content: space-evenly;
+gap:5rem;
+ }
+.hp , .trq , .spd{
+  color:white;
+list-style: none;
+
+height:30rem;
+width: 25rem;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 }
-legend{
-    font-family: "New Amsterdam", sans-serif;
-    font-weight: 400;
-    font-style: normal; 
-    font-size: 2rem;
+.spec-box p{
+  font-size: 1.5rem;
 }
-fieldset{
-  border-color: aqua;
- background: linear-gradient(90deg, rgb(0, 92, 92), var(--color1));
- font-size: larger;
- transition: all ease 0.3s;
+.spec-box h1{
+  font-size: 4rem;
+  display: flex;
+  gap: 1rem
+  ;
 }
-fieldset:hover{
-  scale: 1.2;
-  margin-left: 12rem;
+.line{
+  height: 30rem;
+  width: 0px;
+  border: 1px solid rgb(22, 203, 219);
 }
 .models{
   display: flex;
-
 }
 .model-one , .model-two ,.model-three{
-  height: 40rem;
-  width: 25rem; 
-margin:0 6.8rem;
+  height: 49rem;
+  width: 30rem; 
+margin:0 4.7rem;
 margin-top: 4rem;
+
 }
 .model-one{
   background: no-repeat;
@@ -271,15 +298,124 @@ background-size:100% 90%
   text-decoration: none;
   font-family: "Pacifico", cursive;
   font-weight: 400;
-  
   color: white;
- 
 }
 .models a{
   text-decoration: none;
+  
 }
-.pacifico-regular {
-  font-family: "Pacifico", cursive;
+.menubar{
+  
+  height: 50rem;
+  width: 110rem;
+  margin-left: 4.5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menubar div{
+  
+ 
+  height: 20rem;
+  width: 35rem;
+  background-size: 35rem 20rem;
+}
+.img-one{
+  background: no-repeat;
+  background-image: url(https://uploads.audi-mediacenter.com/system/production/media/58011/images/b92d50aa2b96aa418f935b4d6012fe5809596e2c/A181523_web_2880.jpg?1698301954);
+  
+}
+.img-two{
+  background: no-repeat;
+  background-image: url(https://akm-img-a-in.tosshub.com/indiatoday/images/bodyeditor/202104/Audi_A6_e-tron_concept-x675.jpg?yzlUej6omhRh6O.ekfSmz7Fttgbv3Rbz?size=750:*);
+  
+}
+.img-three{
+  background: no-repeat;
+  background-image: url(https://pictures.dealer.com/y/ybhaudiaoa/1633/5f0742c320f7e6fd39a78ed4955c40aex.jpg?impolicy=downsize_bkpt&w=410);
+  
+}.img-four{
+  background: no-repeat;
+  background-image: url(https://c.ndtvimg.com/audi-e-tron-interior_625x300_1530689224525.jpg);
+  
+}.img-five{
+  background: no-repeat;
+  background-image: url(https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/34470/q8-interior-dashboard.jpeg?q=80);
+  
+}.img-six{
+  background: no-repeat;
+  background-image: url(https://www.audi.com.pk/content/dam/nemo/models/e-tron/audi-e-tron/my-2019/1920x1080_gallery/1920_1080_A_E-TRON_181039.jpg);
+  
+}
+.menubar h1{
+  color: white;
+  font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
+text-shadow: 0 0 5px black;
+padding: 16.5rem 1rem;
+}
+footer{
+bottom: 0rem;
+background-color: rgb(11, 11, 11);
+  height: 55rem;
+  width:99.5%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+.end{
+
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  
+}
+.foot ul{
+padding-left: 7rem;
+  margin-top: -15%;
+
+  list-style-type: none;
+  color: white;
+height: auto;
+width:auto;
+}
+.foot .shop{
+  margin-top: -26.2%;
+  
+}
+.foot .buy{
+  margin-top: -26.2%;
+}
+.foot li{
+  position:relative;
+  padding: 1rem;
+
+  
+}
+.social{
+  height: 5rem;
+  width: 117rem;
+  margin-top: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:flex-end;
+  margin-right: 4rem;
+
+}
+
+.social a{
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 0 0 1rem aqua;
+  padding: 1rem;
 }
