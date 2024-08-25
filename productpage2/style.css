@@ -59,176 +59,54 @@ body {
   color: white;
 }
 .home{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-top: 7.5rem; 
-}
-.two , .three{
-  margin-top:0rem ;
-}
-.carinfo1 {
-  background: no-repeat;
-  height: 80rem;
-  width: 100%;
-  display: flex;
+  margin-top: 7%;
+  width: 90%;
+  height: 800px;
+  background-color: beige;
+
+  border:1px solid black;
+display: flex;
+flex-wrap: wrap;
+
+
+  justify-content: flex-start;
+  align-content: flex-start;
 
 }
-.backimg {
-  background: no-repeat;
-  margin-top: 2.2rem;
-  height: 67rem;
-  width:120rem;
-  background-image: url(https://backiee.com/static/wallpapers/1000x563/198664.jpg);
-  background-size: 120rem 67rem;
-  transition: all ease 0.5s;
-  
+.img{
+height: 100%;
+width: 800px;
+background-color: aquamarine;
+
 }
-.backimg:hover {
-  box-shadow: 0 0 2rem rgb(1, 254, 254);
-  
-}
-.car-info {
-  width: 100%;
+.img img{
   height: 100%;
-  color: rgb(255, 255, 255);
-  transition: all ease 0.5s;
-  display: none;
-  
- 
-}
-.backimg:hover .car-info {
-  display: block;
-  background: linear-gradient(90deg, transparent,black);
-}
-
-.description {
-  width: 20%;
-  margin-left: 64.5rem;
-  font-size: 8rem;
-}
-.car {
-  margin-left: 35rem;
-  text-decoration: underline;
-  font-family: "Cedarville Cursive", cursive;
-  font-size: 2.8rem;
-}
-.car,
-.description {
+  width: 800px;
+  object-fit: cover;
+}  
+.description h1 ,p{
+  padding: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-legend{
-  font-family: "New Amsterdam", sans-serif;
-  font-weight: 400;
-  font-style: normal; 
-  font-size: 2rem;
-}
-fieldset{
-border-color: aqua;
-background: linear-gradient(90deg, rgb(0, 92, 92), var(--color1));
-font-size: 1rem;
-transition: all ease 0.3s;
-}
-.carinfo2{
-  margin-top: -5%;
-  padding-left: 16.5rem;
-  background: no-repeat;
-  height: 80rem;
-  width: 95rem;
-  display: flex;
-  justify-content: flex-end;
-}
-.backimg2{
-  background: no-repeat;
-  margin-top: 2.8rem;
-  height: 67rem;
-  width: 115rem;
-  background-image: url(https://ev-database.org/img/auto/Audi_e-tron_GT_quattro/Audi_e-tron_GT_quattro-01@2x.jpg);
-  background-size: 115rem 67rem;
-  transition: all ease 0.5s;
-    
-}
-.backimg2:hover {
-  box-shadow: 0 0 2rem rgb(0, 240, 248);
- 
-}
-.car-info2{
-  
-  width: 115rem;
-  height: 100%;
-  color: rgb(255, 255, 255);
-  transition: all ease-in-out 0.3s;
-  display: none;
+  flex-wrap: wrap;
 
+  justify-content:center;
+  align-content: center;
+width: 400px;
+height: 200px;
 }
-.backimg2:hover .car-info2  {
-  display: block;
-  background: linear-gradient(90deg , transparent , black); 
+@keyframes appear {
+  from{
+opacity: 0;
+clip-path: inset(0 100% 0 0);  
 }
-.car2{
-  margin-left: 64rem;
-  text-decoration: underline;
-  font-family: "Cedarville Cursive", cursive;
-  font-size: 2.8rem;
-}
-.description2{
-  width: 20%;
-  margin-left: 64.5rem;
-  font-size: 4.5rem;
-}
-.carlink2{
-  text-decoration: none;
-}
-
-.carinfo3{
-  margin-top: -5%;
-  padding-left: 16.5rem;
-  background: no-repeat;
-  height: 80rem;
-  width: 95rem;
-  display: flex;
-  justify-content: flex-end;
-}
-.backimg3{
-  background: no-repeat;
-  margin-top: 2.8rem;
-  height: 67rem;
-  width: 115rem;
-  background-image: url(https://www.motortrend.com/uploads/2023/08/10823-2024-Audi-RS5-Coupe-Competition-Package-front-view.jpg);
-  background-size: 115rem 67rem;
-  transition: all ease 0.3s;
-}
-.car-info3{
-  width: 115rem;
-  height: 100%;
-  color: rgb(255, 255, 255);
-  transition: all ease-in-out 0.3s;
-  display: none;
-}
-.backimg3:hover .car-info3  {
-  display: block;
-  box-shadow: 0 0 2rem aqua;
-  background: linear-gradient(90deg, transparent , black); 
-}
-.car3{
-  margin-left: 64rem;
-  text-decoration: underline;
-  font-family: "Cedarville Cursive", cursive;
-  font-size: 2.8rem;
-}
-.description3{
-  width: 20%;
-  margin-left: 64.5rem;
-  
-  font-size: 4.5rem;
+  to{
+opacity: 1;
+clip-path: inset(0 0 0 0);
+  }
 }
 
 .performance{
-  margin-top: -5%;
+  margin-top: 5%;
   height: 40rem;
   width: 110rem;
 display: flex;
@@ -241,7 +119,7 @@ display: flex;
 justify-content: space-evenly;
 gap:5rem;
  }
-.hp , .trq , .spd{
+.hp , .trq , .spd {
   color:white;
 list-style: none;
 
@@ -251,6 +129,21 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+animation: move linear;
+animation-timeline: view();
+animation-range: entry 0 cover 40%;
+
+}
+@keyframes move {
+  0%{
+    opacity: 0;
+    scale: 0;
+  }
+  100%{
+opacity: 1;
+scale: 1;
+  }
+  
 }
 .spec-box p{
   font-size: 1.5rem;
@@ -274,6 +167,9 @@ flex-direction: column;
   width: 30rem; 
 margin:0 4.7rem;
 margin-top: 4rem;
+animation: move linear;
+animation-timeline: view();
+animation-range: entry 0 cover 40%;
 
 }
 .model-one{
@@ -348,6 +244,11 @@ background-size:100% 90%
   background-image: url(https://www.audi.com.pk/content/dam/nemo/models/e-tron/audi-e-tron/my-2019/1920x1080_gallery/1920_1080_A_E-TRON_181039.jpg);
   
 }
+.menubar div{
+  animation: appear linear;
+animation-timeline: view();
+animation-range: entry 0 cover 40%;
+}
 .menubar h1{
   color: white;
   font-family: "Jersey 10", sans-serif;
@@ -418,4 +319,13 @@ width:auto;
   font-size: 2rem;
   text-shadow: 0 0 1rem aqua;
   padding: 1rem;
+}
+@media only screen and (max-width:500px) {
+  .backimg , .backimg2, .backimg3{
+    /* display: none; */
+    height: 100vh;
+    width: 20vw;
+  background-size: 20vw 100vh;
+  }
+  
 }
